@@ -1,6 +1,6 @@
 ---
 title: "011_simple_linear_regression"
-output: html_document
+output: rmarkdown::github_document
 editor_options: 
   markdown: 
     wrap: 72
