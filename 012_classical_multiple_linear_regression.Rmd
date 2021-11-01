@@ -1,8 +1,10 @@
 ---
 title: "012_classical_multiple_linear_regression"
 output: 
-  html_document:
+  html_document: 
     keep_md: true
+  github_document:
+    toc: true
 ---
 
 
@@ -10,7 +12,7 @@ output:
 ```{r setup, include=FALSE}
 
 library(tidyverse)
-library(plotly)
+# library(plotly)
 
 
 
@@ -67,8 +69,8 @@ df_combinded_norandom <-
 
 
 # 3d plot
-plot_ly(data = df_combinded_norandom, x=~dist_points, y=~shelf_space, z=~sales, type="scatter3d", mode="markers", alpha = 0.8) %>% 
-    layout(scene = list(camera=list(eye = list(x = -1.25, y = -1.5, z = 1.25))))
+# plot_ly(data = df_combinded_norandom, x=~dist_points, y=~shelf_space, z=~sales, type="scatter3d", mode="markers", alpha = 0.8) %>% 
+#     layout(scene = list(camera=list(eye = list(x = -1.25, y = -1.5, z = 1.25))))
 ```
 
 The result is now a plane instead of a a line!!!!!!!!!!!
@@ -214,8 +216,8 @@ df_combinded <-
 
 
 # 3d plot
-plot_ly(data = df_combinded, x=~dist_points, y=~shelf_space, z=~sales, type="scatter3d", mode="markers", alpha = 0.8) %>% 
-    layout(scene = list(camera=list(eye = list(x = -1.25, y = -1.5, z = 1.25))))
+# plot_ly(data = df_combinded, x=~dist_points, y=~shelf_space, z=~sales, type="scatter3d", mode="markers", alpha = 0.8) %>% 
+#     layout(scene = list(camera=list(eye = list(x = -1.25, y = -1.5, z = 1.25))))
 ```
 
 actual residual standard error
